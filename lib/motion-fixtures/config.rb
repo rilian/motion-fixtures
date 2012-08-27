@@ -16,7 +16,7 @@ module Motion; module Project
 
     def fixtures
       unless @fixtures
-        @fixtures = Dir.glob('./spec/fixtures/*').map { |fn| [fn, :NSDocumentDirectory] }
+        @fixtures = Dir.glob('./spec/fixtures/**/*').map { |fn| [fn, :NSDocumentDirectory] }
       end
       @fixtures
     end
